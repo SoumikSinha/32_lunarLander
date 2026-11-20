@@ -8,7 +8,7 @@
 
 ### Prompt 1 (Student):
 > Hey, I am working on my SE lab for Lunar Lander in Pygame. There is a deliberate bug in `touchdown()` and three optional functions left empty (`ship_color`, `on_landing`, `bonus_life_threshold`). Here is the task description from the README:
-> "A safe landing is supposed to require the ship to be over a pad, descending slowly, roughly level, and not moving sideways too fast. In the current build, a ship can slam down sideways — well beyond MAX_SPEED_X — on a pad at a safe vertical speed and angle, and it still counts as a perfect landing."
+> "A safe landing is supposed to require the ship to be over a pad, descending slowly, roughly level, and not moving sideways too fast. In the current build, a ship can slam down sideways - well beyond MAX_SPEED_X - on a pad at a safe vertical speed and angle, and it still counts as a perfect landing."
 > Can you help me find what condition is missing in `touchdown()`?
 
 ### Response 1 (LLM Assistant):
