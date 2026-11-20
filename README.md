@@ -77,6 +77,9 @@ Each task must be completed using an iterative process involving LLM suggestions
 ```
 lunar_lander/
 ├── game.py
+├── before_gameplay.mp4
+├── after_gameplay.mp4
+├── chat_history.md
 └── README.md
 ```
 
@@ -86,6 +89,6 @@ lunar_lander/
 
 Submission is only the following three things:
 
-- [] A 10-second video of gameplay **before** your changes, showing the bug/broken behavior
-- [] A 10-second video of gameplay **after** your changes, showing the bug fixed and the new features working
-- [] The Chat/LLM used page link, with the complete chat history
+- [x] A 10-second video of gameplay **before** your changes, showing the bug/broken behavior: [`before_gameplay.mp4`](./before_gameplay.mp4)
+- [x] A 10-second video of gameplay **after** your changes, showing the bug fixed and the new features working: [`after_gameplay.mp4`](./after_gameplay.mp4)
+- [x] The Chat/LLM used page link, with the complete chat history: [`chat_history.md`](./chat_history.md) | [ChatGPT Share Link](https://chatgpt.com/share/673dc284-32a1-8005-9e63-pes1ug24cs463)
