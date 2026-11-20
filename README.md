@@ -46,7 +46,7 @@ Each task must be completed using an iterative process involving LLM suggestions
 
 ### Task 1: Fix the touchdown validation bug
 
-> A safe landing is supposed to require the ship to be over a pad, descending slowly, roughly level, *and* not moving sideways too fast. In the current build, a ship can slam down sideways — well beyond `MAX_SPEED_X` — on a pad at a safe vertical speed and angle, and it still counts as a perfect landing. Check the condition in `touchdown()` against all three constants it defines near the top of the file (`MAX_SPEED_X`, `MAX_SPEED_Y`, `MAX_ANGLE`), and see which one it never actually checks.
+> A safe landing is supposed to require the ship to be over a pad, descending slowly, roughly level, *and* not moving sideways too fast. In the current build, a ship can slam down sideways  -  well beyond `MAX_SPEED_X`  -  on a pad at a safe vertical speed and angle, and it still counts as a perfect landing. Check the condition in `touchdown()` against all three constants it defines near the top of the file (`MAX_SPEED_X`, `MAX_SPEED_Y`, `MAX_ANGLE`), and see which one it never actually checks.
 
 ### Task 2: Implement `ship_color(fuel_ratio)`
 
@@ -58,7 +58,7 @@ Each task must be completed using an iterative process involving LLM suggestions
 
 ### Task 4: Implement `bonus_life_threshold()`
 
-> Called every frame in `update()`. It takes no arguments and should return an integer score value, or `None` to disable bonus lives entirely. Whenever the score crosses a multiple of that value for the first time, one life is awarded automatically — the bookkeeping (`self.bonus_awarded`) is already implemented, so you only need to choose the threshold. Idea: return `1500`.
+> Called every frame in `update()`. It takes no arguments and should return an integer score value, or `None` to disable bonus lives entirely. Whenever the score crosses a multiple of that value for the first time, one life is awarded automatically  -  the bookkeeping (`self.bonus_awarded`) is already implemented, so you only need to choose the threshold. Idea: return `1500`.
 
 ---
 

@@ -10,21 +10,16 @@ FOOT = 12
 
 
 def ship_color(fuel_ratio):
-    """Return an (r, g, b) hull colour for the given fuel ratio (1.0 = full), or None for the default."""
+    # shift hull color toward red as fuel runs low
     ratio = max(0.0, min(1.0, fuel_ratio))
-    r = 255
-    g = int(240 * ratio)
-    b = int(220 * (ratio ** 2))
-    return (r, g, b)
+    return (255, int(210 * ratio), int(180 * ratio))
 
 
 def on_landing(score):
-    """Called after a successful landing with the points just earned; add fireworks or bonuses here."""
-    print(f"[MISSION CONTROL] Successful touchdown! Earned {score} points.")
+    print(f"Touchdown! Scored {score} points")
 
 
 def bonus_life_threshold():
-    """Return a score value at which the player earns an extra life, or None to disable bonus lives."""
     return 1500
 
 
